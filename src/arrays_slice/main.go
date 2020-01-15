@@ -3,10 +3,23 @@ package main
 import "fmt"
 
 func main() {
-	tabla := [5]int{1, 2, 3, 54, 65}
+	//los slice son vectores dinamicos, pueden ampliarse en tiempo de ejecución
+	matriz := []int{1, 2, 3}
+	fmt.Println(matriz)
+	variante()
+	variante2()
+}
 
-	for i := 0; i < len(tabla); i++ {
-		fmt.Println(tabla[i])
-	}
+func variante() {
+	items := [5]int{1, 2, 3, 4, 5}
+	porcion := items[3:]
 
+	fmt.Println(porcion)
+}
+
+func variante2() {
+	items := make([]int, 4, 20)
+	porcion := items[3:]
+
+	fmt.Println(porcion)
 }
