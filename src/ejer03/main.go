@@ -5,7 +5,6 @@ import (
 	"time"
 )
 
-//Test de condicionales
 func main() {
 	//Los condicionales son básicos, se debe poner la llave { en la misma linea
 	if 2 > 1 {
