@@ -38,8 +38,9 @@ type mujer struct {
 	comiendo  bool
 }
 
-func (h *hombre) repirar() {
-	h.repirando = true
-}
+func (h *hombre) repirar() { h.repirando = true }
+func (h *hombre) pensar()  { h.repirando = true }
+func (h *hombre) comer()   { h.repirando = true }
+func (h *hombre) sexo()    { h.repirando = true }
 
 func main() {}
